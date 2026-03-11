@@ -1,0 +1,10 @@
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: "us-east-2"
+  app: "swe1-app"
+  env: "mysite-env1"
+  bucket_name: "elasticbeanstalk-us-east-2-045682312431" # Verify this in AWS Console
+  on:
+    branch: main
